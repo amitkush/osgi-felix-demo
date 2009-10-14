@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: osgi-rest-provider-bundle
+Bundle-Version: 0.1
+Export-Package: service.rest,service.providers.rest;version="0.1"
+Import-Package: org.osgi.framework
+Bundle-Activator: bundle.RestServiceProviderMetaDataActivator

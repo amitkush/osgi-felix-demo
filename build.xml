@@ -1,0 +1,10 @@
+<project name="osgi-felix" default="jar">
+	
+	<target name="jar">
+		<delete file="dist/osgi-rest-provider.jar"/>
+		<jar destfile="dist/osgi-rest-provider.jar" manifest="config/provider-MANIFEST.MF" basedir="bin" includes="**/*"/>
+		<delete file="dist/osgi-rest-consumer.jar"/>
+		<jar destfile="dist/osgi-rest-consumer.jar" manifest="config/consumer-MANIFEST.MF" basedir="bin" includes="**/*"/>
+	</target>
+	
+</project>
